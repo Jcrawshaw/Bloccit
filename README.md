@@ -3,8 +3,7 @@
 
 Made with my mentor at [Bloc](http://bloc.io)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+App hosted at [Heroku](http://http://jcrawshaw-bloccit.herokuapp.com/)
 
 Things you may want to cover:
 
