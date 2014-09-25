@@ -3,7 +3,7 @@
 
 Made with my mentor at [Bloc](http://bloc.io)
 
-App hosted at [Heroku](http://http://jcrawshaw-bloccit.herokuapp.com/)
+App hosted at [Heroku](http://jcrawshaw-bloccit.herokuapp.com/)
 
 Things you may want to cover:
 
