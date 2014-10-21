@@ -10,12 +10,10 @@ module ApplicationHelper
 
    def form_group_class(errors)
     if errors.any?
-      @classtag = 'form-group has-error'
+      'form-group has-error'
     else
-      @classtag = 'form-group'
-    end
-
-    content_tag :div, class: '#{@classtag}'   
+      'form-group'
+    end   
   end
 
 def markdown(text)
