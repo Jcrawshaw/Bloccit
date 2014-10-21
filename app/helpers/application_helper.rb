@@ -8,6 +8,16 @@ module ApplicationHelper
     end
   end
 
+   def form_group_class(errors)
+    if errors.any?
+      @classtag = 'form-group has-error'
+    else
+      @classtag = 'form-group'
+    end
+
+    content_tag :div, class: '#{@classtag}'   
+  end
+
 def markdown(text)
   renderer = Redcarpet::Render::HTML.new
   extensions = {fenced_code_blocks: true}
