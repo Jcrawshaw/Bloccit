@@ -9,14 +9,17 @@
       </ul>
     </div>
   <% end %>
-  <%= form_group_tag(post.errors[:title]) do %>  
+
+  <div class="#{form_group_class(post.errors[:title])}">  
     <%= f.label :title %>
     <%= f.text_field :title, class: 'form-control', placeholder: "Enter post title" %>
-  <% end %>
+  </div>
+
   <%= form_group_tag(post.errors[:body]) do %>
     <%= f.label :body %>
     <%= f.text_area :body, rows: 8, class: 'form-control', placeholder: "Enter post body" %>
   <% end %>
+  
   <% if post.image? %>
     <div class="form-group">
       <p>Current image</p>
