@@ -11,6 +11,8 @@
       <%= @post.user.name %>
     </small>
     <p><%= markdown @post.body %></p>
+    <h2>Add a comment:</h2>
+    <%= render "comments/form" %>
   </div>
   <div class="col-md-4">
     <% if policy(@post).edit? %>
