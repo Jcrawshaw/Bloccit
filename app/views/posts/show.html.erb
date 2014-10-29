@@ -13,6 +13,8 @@
     <p><%= markdown @post.body %></p>
     <h2>Add a comment:</h2>
     <%= render "comments/form" %>
+    <h2>Comments:</h2>
+    <%= render @comments %>
   </div>
   <div class="col-md-4">
     <% if policy(@post).edit? %>
