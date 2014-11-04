@@ -11,9 +11,9 @@ describe Vote do
 
     describe "value validation" do
       it "only allows -1 or 1 as values" do
-        expect(@v).to eq true
-        expect(@v2).to eq true
-        expect(@v3).to eq false
+        expect(@v.valid?).to eq true
+        expect(@v2.valid?).to eq true
+        expect(@v3.valid?).to eq false
       end
     end
   end
