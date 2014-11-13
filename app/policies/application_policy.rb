@@ -27,7 +27,7 @@ class ApplicationPolicy
   end
 
 def can_moderate?(user, record)
-    (record.user == user || user.admin? || user.moderator)
+    (record.user == user || user.admin? || user.moderator?)
   end
   
   def edit?
