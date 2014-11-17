@@ -17,4 +17,13 @@ module TestFactories
     user.save
     user
   end
+
+# FactoryGirl.define do
+ #   factory :user do
+  #    email 'test@example.com'
+   #   password 'helloworld'
+    #  admin true
+   # end
+ # end
+
 end
