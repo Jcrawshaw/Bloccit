@@ -21,6 +21,7 @@ describe "Visiting profiles" do
       expect(page).to have_content(@post.title)
       expect(page).to have_content(@comment.body)
     end
-
   end
+
+
 end
