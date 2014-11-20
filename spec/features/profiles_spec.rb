@@ -9,6 +9,7 @@ describe "Visiting profiles" do
     @comment = create(:comment, user: @user, post: @post)
     allow(@comment).to receive(:send_favorite_emails)
     @comment.save
+    puts @comment.inspect
   end
 
   describe "not signed in " do
